@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="564.0" prefWidth="954.0" styleClass="transparent" stylesheets="@css/style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="viewSalesController">
+   <children>
+      <AnchorPane layoutX="203.0" prefHeight="564.0" prefWidth="752.0" styleClass="add-btn" stylesheets="@css/dashBored_design.css">
+         <children>
+            <AnchorPane layoutX="527.0" layoutY="211.0" prefHeight="118.0" prefWidth="167.0" styleClass="nav-form" stylesheets="@../css/dashBored_design.css">
+               <children>
+                  <Label layoutX="51.0" layoutY="84.0" prefHeight="18.0" prefWidth="134.0" text="Last day" textFill="WHITE">
+                     <font>
+                        <Font name="Tahoma" size="15.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="40.0" fitWidth="62.0" layoutX="14.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Downloads/dollar.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="salesDay" layoutX="133.0" layoutY="-1.0" prefHeight="29.0" prefWidth="58.0" text="\$2000" textFill="WHITE">
+                     <font>
+                        <Font name="Tahoma" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="280.0" layoutY="211.0" prefHeight="118.0" prefWidth="167.0" styleClass="nav-form" stylesheets="@../css/dashBored_design.css">
+               <children>
+                  <Label layoutX="51.0" layoutY="84.0" prefHeight="18.0" prefWidth="134.0" text="Last week" textFill="WHITE">
+                     <font>
+                        <Font name="Tahoma" size="15.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="40.0" fitWidth="62.0" layoutX="14.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Downloads/dollar.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="salesWeek" layoutX="133.0" layoutY="-1.0" prefHeight="29.0" prefWidth="58.0" text="\$10000" textFill="WHITE">
+                     <font>
+                        <Font name="Tahoma" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="14.0" layoutY="211.0" prefHeight="118.0" prefWidth="167.0" styleClass="nav-form" stylesheets="@../css/dashBored_design.css">
+               <children>
+                  <Label layoutX="43.0" layoutY="84.0" prefHeight="18.0" prefWidth="134.0" text="Last month" textFill="WHITE">
+                     <font>
+                        <Font name="Tahoma" size="15.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="40.0" fitWidth="62.0" layoutX="14.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../Downloads/dollar.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="salesMonth" layoutX="133.0" layoutY="-1.0" prefHeight="29.0" prefWidth="58.0" text="\$30000" textFill="WHITE">
+                     <font>
+                        <Font name="Tahoma" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="564.0" prefWidth="194.0" styleClass="white-background" stylesheets="@css/style.css">
+         <children>
+            <AnchorPane layoutX="5.0" layoutY="213.0" prefHeight="58.0" prefWidth="187.0">
+               <children>
+                  <Label layoutX="60.0" layoutY="5.0" prefHeight="46.0" prefWidth="127.0" text="view managers">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="viewManagers" fitHeight="30.0" fitWidth="30.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/employees.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="5.0" layoutY="329.0" prefHeight="52.0" prefWidth="179.0">
+               <children>
+                  <Label layoutX="60.0" layoutY="5.0" prefHeight="46.0" prefWidth="127.0" text="view sales">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="viewSales" fitHeight="30.0" fitWidth="30.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/sales.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="-7.0" layoutY="423.0" prefHeight="55.0" prefWidth="211.0">
+               <children>
+                  <Label layoutX="79.0" layoutY="12.0" prefHeight="46.0" prefWidth="131.0" text="Logout">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="logout" fitHeight="30.0" fitWidth="30.0" layoutX="28.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icons/logout.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="670.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <top>
+      <HBox alignment="CENTER_LEFT" prefHeight="60.0" prefWidth="200.0" spacing="20.0" styleClass="white-background" stylesheets="@../css/style.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label contentDisplay="CENTER" prefHeight="61.0" prefWidth="248.0" text="MY LIBRARY" textFill="#ff5056">
+               <font>
+                  <Font name="Edwardian Script ITC" size="36.0" />
+               </font>
+            </Label>
+            <Separator maxHeight="-Infinity" orientation="VERTICAL" prefHeight="42.0" prefWidth="6.0" />
+            <HBox alignment="CENTER" maxHeight="-Infinity" prefHeight="35.0" prefWidth="290.0" styleClass="round-layout" stylesheets="@css/style.css">
+               <children>
+                  <TextField fx:id="searchInput" prefHeight="26.0" prefWidth="239.0" promptText="search" styleClass="transparent" stylesheets="@css/style.css" />
+                  <ImageView fx:id="search" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../images/icons8-search-50.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <Pane prefHeight="60.0" prefWidth="389.0" HBox.hgrow="ALWAYS" />
+            <HBox alignment="CENTER" prefHeight="60.0" prefWidth="162.0">
+               <children>
+                  <Label prefHeight="60.0" prefWidth="34.0" text="Zayed">
+                     <font>
+                        <Font name="Berlin Sans FB" size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="60.0" fitWidth="74.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/zayed%20papers.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
+      </HBox>
+   </top>
+   <left>
+      <VBox prefHeight="200.0" prefWidth="250.0" styleClass="white-background" stylesheets="@css/style.css" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="618.0" prefWidth="250.0" spacing="45.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="50.0" prefWidth="136.0" spacing="15.0" styleClass="mouse-moved" stylesheets="@../css/style.css">
+                     <children>
+                        <ImageView fx:id="viewCart" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/shopping%20cart.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="46.0" prefWidth="131.0" text="View cart">
+                           <font>
+                              <Font name="Berlin Sans FB" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="54.0" prefWidth="250.0" spacing="15.0" styleClass="mouse-moved" stylesheets="@../css/style.css">
+                     <children>
+                        <ImageView fx:id="orderStatus" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/orderStatus.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="46.0" prefWidth="131.0" text="view order Status">
+                           <font>
+                              <Font name="Berlin Sans FB" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="54.0" prefWidth="250.0" spacing="15.0" styleClass="mouse-moved" stylesheets="@../css/style.css">
+                     <children>
+                        <ImageView fx:id="history" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/history.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="46.0" prefWidth="131.0" text="History">
+                           <font>
+                              <Font name="Berlin Sans FB" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="54.0" prefWidth="250.0" spacing="15.0" styleClass="mouse-moved" stylesheets="@../css/style.css">
+                     <children>
+                        <ImageView fx:id="changePassword" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/lock.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="46.0" prefWidth="131.0" text="Change password">
+                           <font>
+                              <Font name="Berlin Sans FB" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="54.0" prefWidth="250.0" spacing="15.0" styleClass="mouse-moved" stylesheets="@../css/style.css">
+                     <children>
+                        <ImageView fx:id="Home" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/home.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="46.0" prefWidth="131.0" text="Home">
+                           <font>
+                              <Font name="Berlin Sans FB" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="54.0" prefWidth="250.0" spacing="15.0" styleClass="mouse-moved" stylesheets="@../css/style.css">
+                     <children>
+                        <ImageView fx:id="logout" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../icons/logout.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="46.0" prefWidth="131.0" text="Logout">
+                           <font>
+                              <Font name="Berlin Sans FB" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="18.0" prefWidth="236.0" text="recently added">
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Label>
+            <ScrollPane prefHeight="250.0" prefWidth="200.0" styleClass="transparent" stylesheets="@css/style.css">
+               <content>
+                  <HBox fx:id="cardLayoout" alignment="CENTER_LEFT" prefHeight="235.0" prefWidth="859.0" spacing="20.0" styleClass="transparent" stylesheets="@../css/style.css" />
+               </content>
+            </ScrollPane>
+            <Label prefHeight="18.0" prefWidth="236.0" text="recomded for you">
+               <font>
+                  <Font name="Berlin Sans FB" size="24.0" />
+               </font>
+            </Label>
+            <ScrollPane prefHeight="200.0" prefWidth="200.0" styleClass="transparent" stylesheets="@../css/style.css" VBox.vgrow="ALWAYS">
+               <content>
+                  <GridPane fx:id="bookContainer" prefHeight="0.0" prefWidth="2.0">
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+               </content>
+            </ScrollPane>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+   </center>
+</BorderPane>
