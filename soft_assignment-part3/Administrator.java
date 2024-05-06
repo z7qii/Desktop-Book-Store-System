@@ -28,7 +28,7 @@ public class Administrator extends User {
         ResultSet resultSet = null;
 
         try {
-            connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/software_assignment", "root", "uvhrkh12");
+            connection = DriverManager.getConnection("URL");
             preparedStatement = connection.prepareStatement("SELECT * FROM managers" );
         
             resultSet = preparedStatement.executeQuery();
@@ -65,7 +65,7 @@ public class Administrator extends User {
         ResultSet resultSet = null;
 
         try{
-            connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/software_assignment", "root", "uvhrkh12");
+            connection = DriverManager.getConnection("URL");
             preparedStatement = connection.prepareStatement("SELECT orderTotal FROM orders");
             
             resultSet = preparedStatement.executeQuery();
