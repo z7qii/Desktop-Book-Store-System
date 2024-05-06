@@ -37,7 +37,7 @@ public class Manager extends User {
         
         try{
            
-            connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/software_assignment", "root", "uvhrkh12");
+            connection = DriverManager.getConnection("URL");
             preparedStatement = connection.prepareStatement("INSERT INTO books (bookID , bookName , bookPrice , bookCategory , bookAuthor , quantity , bookImage , bookRating) VALUES (? , ? , ? , ? , ? , ? , ? , ? )");
             preparedStatement.setString(1, book.getBookID());
             preparedStatement.setString(2, book.getBookName());
@@ -78,7 +78,7 @@ public class Manager extends User {
 
         try{
            
-            connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/software_assignment", "root", "uvhrkh12");
+            connection = DriverManager.getConnection("URL");
             preparedStatement = connection.prepareStatement("SELECT * FROM orders");
 
             
@@ -115,7 +115,7 @@ public class Manager extends User {
         ResultSet resultSet = null;
 
         try {
-            connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/software_assignment", "root", "uvhrkh12");
+            connection = DriverManager.getConnection("URL");
             preparedStatement = connection.prepareStatement("SELECT * FROM employees" );
         
             resultSet = preparedStatement.executeQuery();
@@ -152,7 +152,7 @@ public class Manager extends User {
         ResultSet resultSet = null;
 
         try {
-            connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/software_assignment", "root", "uvhrkh12");
+            connection = DriverManager.getConnection("URL");
             preparedStatement = connection.prepareStatement("SELECT * FROM books" );
         
             resultSet = preparedStatement.executeQuery();
@@ -190,7 +190,7 @@ public class Manager extends User {
         ResultSet resultSet = null;
 
         try{
-            connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/softWare_assignment", "root", "uvhrkh12");
+            connection = DriverManager.getConnection("URL");
             preparedStatement = connection.prepareStatement("DELETE FROM  books WHERE bookID = ?");
             preparedStatement.setString(1, bookID);
             preparedStatement.executeUpdate();
