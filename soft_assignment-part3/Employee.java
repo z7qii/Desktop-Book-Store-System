@@ -45,7 +45,7 @@ public class Employee extends User {
         ResultSet resultSet = null;
 
         try {
-            connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/software_assignment", "root", "uvhrkh12");
+            connection = DriverManager.getConnection("URL");
             preparedStatement = connection.prepareStatement("SELECT * FROM orders WHERE orderStatus = ?" );
             preparedStatement.setString(1, "in progress");
             resultSet = preparedStatement.executeQuery();
@@ -84,7 +84,7 @@ public class Employee extends User {
         ResultSet resultSet = null;
 
         try{
-            connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/software_assignment", "root", "uvhrkh12");
+            connection = DriverManager.getConnection("URL");
             preparedStatement = connection.prepareStatement("update orders SET orderStatus = ? where orderID = ?");
             preparedStatement.setString(1, "approved");
             preparedStatement.setString(2, orderId);
