@@ -38,7 +38,7 @@ public class Customer extends User {
         ResultSet resultSet = null;
 
         try {
-            connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/software_assignment", "root", "uvhrkh12");
+            connection = DriverManager.getConnection("URL");
             psCheckUserExists = connection.prepareStatement("SELECT * FROM customers WHERE email = ?");
             psCheckUserExists.setString(1, super.getEmail());
             resultSet = psCheckUserExists.executeQuery();
@@ -78,7 +78,7 @@ public class Customer extends User {
         ResultSet resultSet = null;
 
         try{
-            connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/software_assignment", "root", "uvhrkh12");
+            connection = DriverManager.getConnection("URL");
             preparedStatement = connection.prepareStatement("SELECT * FROM books WHERE bookName = ? OR bookCategory = ? OR bookAuthor = ? ");
             preparedStatement.setString(1, search);
             preparedStatement.setString(2, search);
@@ -117,7 +117,7 @@ public class Customer extends User {
         ResultSet resultSet = null;
 
         try{
-            connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/software_assignment", "root", "uvhrkh12");
+            connection = DriverManager.getConnection("URL");
             preparedStatement = connection.prepareStatement("SELECT * FROM Cart WHERE cusEmail = ?");
             preparedStatement.setString(1, super.getEmail());
            
@@ -156,7 +156,7 @@ public class Customer extends User {
 
         try{
             deletCart();
-            connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/software_assignment", "root", "uvhrkh12");
+            connection = DriverManager.getConnection("URL");
             
             
             for(int i = 0 ; i < cart.size() ; i++){
@@ -195,7 +195,7 @@ public class Customer extends User {
         ResultSet resultSet = null;
 
         try{
-            connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/software_assignment", "root", "uvhrkh12");
+            connection = DriverManager.getConnection("URL");
             preparedStatement = connection.prepareStatement("SELECT quantity FROM books WHERE bookID = ?");
             preparedStatement.setString(1, book.getBookID());
             resultSet = preparedStatement.executeQuery();
@@ -245,7 +245,7 @@ public class Customer extends User {
         ResultSet resultSet = null;
 
         try{
-            connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/software_assignment", "root", "uvhrkh12");
+            connection = DriverManager.getConnection("URL");
             preparedStatement = connection.prepareStatement("UPDATE customers SET password = ? WHERE password = ? ");
             preparedStatement.setString(1, newPassword);
             preparedStatement.setString(2 , oldPassword);
@@ -273,7 +273,7 @@ public class Customer extends User {
         ResultSet resultSet = null;
 
         try{
-            connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/software_assignment", "root", "uvhrkh12");
+            connection = DriverManager.getConnection("URL");
             preparedStatement = connection.prepareStatement("DELETE FROM cart WHERE cusEmail = ?");
             preparedStatement.setString(1, super.getEmail());
             preparedStatement.executeUpdate();
@@ -303,7 +303,7 @@ public class Customer extends User {
         try{
             Random rand = new Random();
             Integer id;
-            connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/software_assignment", "root", "uvhrkh12");
+            connection = DriverManager.getConnection("URL");
             
             
             for(int i = 0 ; i < books.size() ; i++){
@@ -351,7 +351,7 @@ public class Customer extends User {
 
         try{
            
-            connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/software_assignment", "root", "uvhrkh12");
+            connection = DriverManager.getConnection("URL");
             preparedStatement = connection.prepareStatement("SELECT * FROM orders WHERE customerEmail = ? AND orderStatus = ?");
 
             preparedStatement.setString(1, super.getEmail());
@@ -396,7 +396,7 @@ public class Customer extends User {
         ResultSet resultSet = null;
 
         try {
-            connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/software_assignment", "root", "uvhrkh12");
+            connection = DriverManager.getConnection("URL");
             psCheckUserExists = connection.prepareStatement("INSERT INTO address (cusEmail, city , street , postalCode) VALUES (? , ? , ? , ?)");
             psCheckUserExists.setString(1, super.getEmail());
             psCheckUserExists.setString(2, address.getCity());
@@ -428,7 +428,7 @@ public class Customer extends User {
         ResultSet resultSet = null;
 
         try{
-            connection = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/software_assignment", "root", "uvhrkh12");
+            connection = DriverManager.getConnection("URL");
             preparedStatement = connection.prepareStatement("SELECT * FROM address WHERE cusEmail = ?");
             preparedStatement.setString(1, super.getEmail());
             resultSet = preparedStatement.executeQuery();
